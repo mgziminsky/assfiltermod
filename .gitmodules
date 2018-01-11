@@ -1,12 +1,12 @@
 [submodule "libass"]
 	path = libass/upstream
-	url = https://github.com/Blitzker/libass.git
+	url = git@github.com:Blitzker/libass.git
 [submodule "fribidi"]
 	path = SMP/fribidi
-	url = https://github.com/Blitzker/fribidi.git
+	url = git@github.com:ShiftMediaProject/fribidi.git
 [submodule "freetype2"]
 	path = SMP/freetype2
-	url = https://github.com/Blitzker/freetype2.git
+	url = git@github.com:ShiftMediaProject/freetype2.git
 [submodule "harfbuzz"]
 	path = SMP/harfbuzz
-	url = https://github.com/Blitzker/harfbuzz.git
+	url = git@github.com:ShiftMediaProject/harfbuzz.git
