@@ -57,7 +57,6 @@ HRESULT AssPin::CheckMediaType(const CMediaType* pmt)
         pmt->formattype == FORMAT_SubtitleInfo)
     {
         DbgLog((LOG_TRACE, 1, L"AssPin::CheckMediaType -> MEDIASUBTYPE_VOBSUB_HDMVSUB"));
-        return S_OK;
     }
 
     DbgLog((LOG_TRACE, 1, L"AssPin::CheckMediaType -> Unsupported MEDIATYPE"));

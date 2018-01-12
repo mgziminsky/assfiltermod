@@ -166,9 +166,7 @@ bool AssFilterAutoLoader::AutoLoad(IFilterGraph* pGraph)
                             AM_MEDIA_TYPE* pMediaType = NULL;
                             for (; pEnumMediaTypes->Next(1, &pMediaType, NULL) == S_OK; DeleteMediaType(pMediaType), pMediaType = NULL)
                             {
-                                if (pMediaType->majortype == MEDIATYPE_Subtitle && ((pMediaType->subtype == MEDIASUBTYPE_ASS) ||
-                                    (pMediaType->subtype == MEDIASUBTYPE_UTF8) || (pMediaType->subtype == MEDIASUBTYPE_VOBSUB) ||
-                                    (pMediaType->subtype == MEDIASUBTYPE_HDMVSUB)))
+                                if (pMediaType->majortype == MEDIATYPE_Subtitle && ((pMediaType->subtype == MEDIASUBTYPE_ASS) || (pMediaType->subtype == MEDIASUBTYPE_UTF8)))
                                 {
                                     DbgLog((LOG_TRACE, 1, L"AssFilterAutoLoader::AutoLoad -> Found subtitle pin on source filter"));
 
